@@ -1,0 +1,123 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Hello, Colaboratory",
+      "version": "0.3.2",
+      "provenance": [],
+      "collapsed_sections": [],
+      "toc_visible": true,
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sesitsop/mp/blob/master/python_tools\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "2YUUXxJ3vkMR",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Python Libraries"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hTtiPgsrvtl6",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#import python libraries\n",
+        "import os\n",
+        "import pandas as pd\n",
+        "import re"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Y9OlcgGOvLW8",
+        "colab_type": "text"
+      },
+      "source": [
+        "# CSV to PANDAS import"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ga_5_jpwvVHe",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#import CSV \n",
+        "from google.colab import files\n",
+        "\n",
+        "uploaded = files.upload()\n",
+        "\n",
+        "for fn in uploaded.keys():\n",
+        "  print('User uploaded file \"{name}\" with length {length} bytes'.format(\n",
+        "      name=fn, length=len(uploaded[fn])))"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-UF95rk_wDXZ",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "ls"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "VYfS7qB5wEiv",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "df = pd.read_csv(fn)\n",
+        "df"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ImmHsBHDvfGV",
+        "colab_type": "text"
+      },
+      "source": [
+        ""
+      ]
+    }
+  ]
+}
